@@ -69,7 +69,7 @@ const HeroSlider = () => {
                 
                 {/* dots */}
                 <div 
-                    className="absolute bottom-4 right-33 md:right-75 lg:right-130 transform -translate-x-1/2 flex space-x-3 cursor-pointer"
+                    className="absolute bottom-4 right-33 md:right-75 lg:right-120 transform -translate-x-1/2 flex space-x-3 cursor-pointer"
                     onClick={nextSlide}>
                         {slider.map((_, index) => (
                             <div
