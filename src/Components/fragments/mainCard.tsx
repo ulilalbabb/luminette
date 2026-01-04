@@ -16,39 +16,38 @@ const MainCard = () => {
                         <IoIosArrowRoundForward size={25} className="group-hover:translate-x-1 transition-transform duration-300 ease-in-out"/>
                 </Link>
                 <Image 
-                    src="/assets/1.png" 
-                    width={300} 
-                    height={300}
+                    src="/assets/11.png" 
+                    width={400} 
+                    height={400}
                     alt="Chair" 
-                    className="mt-auto" 
+                    className="h-full w-full object-cover lg:w-full lg:h-full" 
                 />
             </div>
 
             {/* Bedroom */}
-            <div className="bg-gray-100 rounded-lg p-6 flex items-end">
-                <div>
-                    <h2 className="text-3xl font-semibold">
-                        Bedroom
-                    </h2>
+            <div className="bg-gray-100 rounded-lg p-6 flex justify-between items-end">
+                <div className="pb-10">
+                    <h2 className="text-3xl font-semibold">Bedroom</h2>
                     <Link
                         href="#"
-                        className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-                            Shop Now
-                            <IoIosArrowRoundForward size={25} className="group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
+                        className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out"
+                    >
+                        Shop Now
+                        <IoIosArrowRoundForward size={25} className="group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
                     </Link>
                 </div>
                 <Image 
-                    src="/assets/2.png" 
-                    width={400} 
-                    height={400}
-                    alt="Drawer" 
-                    className="mt-auto" 
+                    src="/assets/22.png" 
+                    width={200} 
+                    height={200}
+                    alt="Toaster" 
+                    className="ml-5 lg:h-full" 
                 />
             </div>
 
             {/* Kitchen */}
-            <div className="bg-gray-100 rounded-lg p-6 flex items-end">
-                <div>
+            <div className="bg-gray-100 rounded-lg p-6 flex justify-between items-end">
+                <div className="pb-10">
                     <h2 className="text-3xl font-semibold">Kitchen</h2>
                     <Link
                         href="#"
@@ -59,11 +58,11 @@ const MainCard = () => {
                     </Link>
                 </div>
                 <Image 
-                    src="/assets/3.png" 
-                    width={400} 
-                    height={400}
+                    src="/assets/33.png" 
+                    width={200} 
+                    height={200}
                     alt="Toaster" 
-                    className="mt-auto" 
+                    className="ml-10 lg:h-full" 
                 />
             </div>
         </div>
