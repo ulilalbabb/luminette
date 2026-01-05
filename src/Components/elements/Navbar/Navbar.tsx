@@ -80,7 +80,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
                         </aside>            
-                <h1 className="text-2xl">Luminette</h1>
+                <h1 className="text-2xl text-amber-800">Luminette</h1>
             </div>
 
             {/* Desktop Menu */}
