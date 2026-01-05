@@ -6,14 +6,14 @@ const BannerLayouts = () => {
     return (
         <div className="bg-slate-100 md:flex">
                     <Image
-                        src="/assets/banner.png" 
+                        src="/assets/banner-2.jpg" 
                         width={500} 
                         height={500} 
                         alt="banner"
                         className="w-full md:w-1/2" 
                     />
             <div className="pl-7 py-10 md:pl-14 md:pt-20 flex flex-col gap-2 md:gap-5">
-                <h1 className="text-blue-500 font-bold">
+                <h1 className="text-amber-800 font-bold">
                     SALE UP TO 50% OFF
                 </h1>
                 <h2 className="font-semibold text-3xl">

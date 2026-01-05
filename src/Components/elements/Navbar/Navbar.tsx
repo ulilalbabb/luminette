@@ -50,7 +50,7 @@ const Navbar = () => {
                         <aside
                             className={`fixed top-0 left-0 h-screen w-9/10 bg-white z-50 transform transition-transform duration-300 ease-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
                                 <div className="flex justify-between items-center p-6">
-                                    <h1 className="text-xl font-semibold">
+                                    <h1 className="text-xl font-medium text-amber-800">
                                         Luminette
                                     </h1>
                                     <Button
@@ -80,7 +80,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
                         </aside>            
-                <h1 className="text-2xl text-amber-800">Luminette</h1>
+                <h1 className="text-2xl text-amber-800 font-medium">Luminette</h1>
             </div>
 
             {/* Desktop Menu */}

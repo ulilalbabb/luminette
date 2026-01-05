@@ -72,7 +72,7 @@ const NewArrivalsCard = () => {
                                 alt="product"
                                 className="w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-in-out"
                             />
-                            <Button variant="border border-black py-1 hover:bg-black hover:text-white w-3/4 mx-8 rounded-sm">Add to Cart</Button>
+                            <Button variant="border border-amber-800 py-1 hover:bg-amber-800 hover:text-white w-3/4 mx-8 rounded-sm">Add to Cart</Button>
                         </div>
                     </div>
                     <div className="mt-5">

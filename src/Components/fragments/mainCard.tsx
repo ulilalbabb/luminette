@@ -8,7 +8,7 @@ const MainCard = () => {
 
             {/* Living Room */}
             <div className="col-span-1 row-span-2 bg-gray-100 rounded-lg p-6 flex flex-col">
-                <h2 className="text-3xl font-semibold">Living Room</h2>
+                <h2 className="text-3xl font-semibold text-amber-800">Living Room</h2>
                 <Link
                     href="#"
                     className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out">
@@ -27,7 +27,7 @@ const MainCard = () => {
             {/* Bedroom */}
             <div className="bg-gray-100 rounded-lg p-6 flex justify-between items-end">
                 <div className="pb-10">
-                    <h2 className="text-3xl font-semibold">Bedroom</h2>
+                    <h2 className="text-3xl font-semibold text-amber-800">Bedroom</h2>
                     <Link
                         href="#"
                         className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out"
@@ -48,7 +48,7 @@ const MainCard = () => {
             {/* Kitchen */}
             <div className="bg-gray-100 rounded-lg p-6 flex justify-between items-end">
                 <div className="pb-10">
-                    <h2 className="text-3xl font-semibold">Kitchen</h2>
+                    <h2 className="text-3xl font-semibold text-amber-800">Kitchen</h2>
                     <Link
                         href="#"
                         className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out"

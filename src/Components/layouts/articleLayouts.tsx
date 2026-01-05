@@ -6,7 +6,7 @@ const ArticleLayouts = () => {
     return (
         <div className="px-7 md:px-6 md:py-10 lg:px-34">
             <div className="flex justify-between py-7">
-                <h1 className="text-3xl font-semibold">
+                <h1 className="text-3xl font-semibold text-amber-800">
                     Articles
                 </h1>
                 <Button

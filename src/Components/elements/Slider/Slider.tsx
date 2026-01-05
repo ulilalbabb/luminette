@@ -25,7 +25,7 @@ const HeroSlider = () => {
                 </div>
                 <div className="md:w-1/2">
                     <p>
-                        <span className="font-bold">Luminette </span> 
+                        <span className="font-medium text-amber-800">Luminette </span> 
                         is a gift & decorations store based in Malang, Indonesia. Est since 2025. 
                     </p>
                 </div>
