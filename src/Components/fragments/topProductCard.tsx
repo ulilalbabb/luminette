@@ -1,17 +1,17 @@
 'use client'
 
-import { useEffect, useState, useRef } from "react";
-import { getSupabaseBrowserClient } from "@/src/lib/supabase/browser-client";
-import { CiHeart } from "react-icons/ci";
-import { ProductType } from "@/src/types/product.type";
-import Image from "next/image";
-import Button from "../elements/Button/Button";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
+import { getSupabaseBrowserClient } from "@/src/lib/supabase/browser-client"
+import { ProductType } from "@/src/types/product.type"
+import { useState, useRef, useEffect } from "react"
+import Button from "../elements/Button/Button"
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import Image from "next/image"
+import { CiHeart } from "react-icons/ci"
 
-const NewArrivalsCard = () => {
-    const [products, setProducts] = useState<ProductType[]>([]);
-    const scrollRef = useRef<HTMLDivElement>(null);
+const TopProductCard = () => {
+    const [product, setProduct] = useState<ProductType[]>([])
     const supabase = getSupabaseBrowserClient()
+    const scrollRef = useRef<HTMLDivElement>(null)
 
     const scrollLeft = () => {
         scrollRef.current?.scrollBy({
@@ -28,20 +28,20 @@ const NewArrivalsCard = () => {
     };
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            const { data, error } = await supabase.from('new-arrival').select('*');
-            if (error) {
-                console.log('Error fetching products: ', error);
-            }
-            if (data) {
-                setProducts(data);
-            }
-        };
-        fetchProducts();
-    }, []);
+            const fetchProducts = async () => {
+                const { data, error } = await supabase.from('top-product').select('*');
+                if (error) {
+                    console.log('Error fetching products: ', error);
+                }
+                if (data) {
+                    setProduct(data);
+                }
+            };
+            fetchProducts();
+        }, []);
 
-    if (products.length === 0) {
-        return <p>Loading...</p>;
+    if (product.length === 0) {
+        return <div>Loading...</div>;
     }
 
     return (
@@ -52,7 +52,7 @@ const NewArrivalsCard = () => {
                     <FaArrowLeft size={20} />
             </Button>
             <div className="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar" ref={scrollRef}>
-                {products.map((product) => (
+                {product.map((product) => (
                     <div key={product.id}>
                     <div className="w-[262] h-[349] md:w-[300px] md:h-[400px]">
                         <div className="flex justify-between items-center p-3">
@@ -88,7 +88,7 @@ const NewArrivalsCard = () => {
                     <FaArrowRight size={20} />
             </Button>
         </div>
-    );
-};
+    )
+}
 
-export default NewArrivalsCard;
+export default TopProductCard
