@@ -1,5 +1,5 @@
 import Navbar from "@/src/Components/elements/Navbar/Navbar";
-import HeroSlider from "@/src/Components/elements/Slider/Slider";
+import HeroSlider from "@/src/Components/elements/Banner-Slider/BannerSlider";
 import MainCard from "@/src/Components/fragments/mainCard";
 import NewArrivalsLayouts from "@/src/Components/layouts/newArrivalCardLayouts";
 import InformationLayouts from "../Components/layouts/informationLayouts";

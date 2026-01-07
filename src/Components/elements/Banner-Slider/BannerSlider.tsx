@@ -17,8 +17,8 @@ const HeroSlider = () => {
     } = useCarousel(slider.length)
 
     return (
-        <div className="flex flex-col-reverse w-full px-3 md:px-6">
-            <header className="flex flex-col gap-7 md:flex md:flex-row md:items-center md:justify-between lg:px-34">
+        <div className="flex flex-col-reverse w-full px-3 md:px-6 lg:px-34">
+            <header className="flex flex-col gap-7 md:flex md:flex-row md:items-center md:justify-between">
                 <div className="pt-9">
                     <h1 className="text-5xl md:text-5xl">Bright Ideas/</h1>
                     <h1 className="text-5xl md:text-5xl">Brilliant Results.</h1>

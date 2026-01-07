@@ -10,7 +10,7 @@ const MainCard = () => {
             <div className="col-span-1 row-span-2 bg-gray-100 rounded-lg p-6 flex flex-col">
                 <h2 className="text-3xl font-semibold text-amber-800">Living Room</h2>
                 <Link
-                    href="#"
+                    href="/living-room"
                     className="flex items-center pt-2 group underline underline-offset-5 hover:-translate-y-1 transition-transform duration-300 ease-in-out">
                         Shop Now
                         <IoIosArrowRoundForward size={25} className="group-hover:translate-x-1 transition-transform duration-300 ease-in-out"/>
