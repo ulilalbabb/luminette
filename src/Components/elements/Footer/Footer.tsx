@@ -4,7 +4,7 @@ import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
     return (
-        <div className="bg-black text-white text-center py-10 px-4 md:px-6 lg:px-34">
+        <div className="bg-amber-900 text-white text-center py-10 px-4 md:px-6 lg:px-34">
             <div className="md:flex md:flex-row md:justify-between">
                 <div className="md:flex md:flex-row md:gap-4 flex flex-col items-center">
                     <h1 className="font-bold text-2xl">Luminette</h1>
