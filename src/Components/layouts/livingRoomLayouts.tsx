@@ -14,7 +14,7 @@ const LivingRoomLayouts = () => {
                     alt="Living Room"
                     className="w-full h-full object-cover"
                 />
-                <h1 className="absolute top-20 left-25 text-4xl font-bold text-white">Living Room</h1>
+                <h1 className="absolute top-16 left-25 text-4xl font-bold text-white">Living Room</h1>
             </div>
             <LivingRoom />
         </>

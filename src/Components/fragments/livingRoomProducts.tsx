@@ -13,7 +13,7 @@ const LivingRoom = () => {
 
     useEffect(() => {
             const fetchProducts = async () => {
-                const { data, error } = await supabase.from('top-product').select('*');
+                const { data, error } = await supabase.from('living-room').select('*');
                 if (error) {
                     console.log('Error fetching products: ', error);
                 }
@@ -34,7 +34,7 @@ const LivingRoom = () => {
             <div className="grid grid-cols-2 gap-5">
                 {livingRoomProducts.map((product) => (
                     <div key={product.id}>
-                         <div className="bg-gray-100 w-[172] h-[285] md:w-[300px] md:h-[400px] mt-10">
+                        <div className="bg-gray-100 w-[172] h-[285] md:w-[300px] md:h-[400px] mt-10">
                             <div className="flex justify-between items-center p-3">
                                 <div>
                                     <p className="font-semibold text-center text-sm">NEW</p>
